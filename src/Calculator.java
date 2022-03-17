@@ -52,19 +52,31 @@ public class Calculator {
                     System.out.println("INSERT ANGLE VALUE:\t");
                     angle = keyboard.nextDouble();
                     result = Math.sin(Math.toRadians(angle));
-                    System.out.println("SINE VALUE IS:\t" + result);
+                    if (angle >= 361 || angle == 0) {
+                        System.out.println("NON EXISTENT ANGLE");
+                    } else {
+                        System.out.println("SINE VALUE IS:\t" + result);
+                    }
                     break;
                 case 6:
                     System.out.println("INSERT ANGLE VALUE:\t");
                     angle = keyboard.nextDouble();
                     result = Math.cos(Math.toRadians(angle));
-                    System.out.println("COSINE VALUE IS:\t" + result);
+                    if (angle >= 361 || angle == 0) {
+                        System.out.println("NON EXISTENT ANGLE");
+                    } else {
+                        System.out.println("COSINE VALUE IS:\t" + result);
+                    }
                     break;
                 case 7:
                     System.out.println("INSERT ANGLE VALUE:\t");
                     angle = keyboard.nextDouble();
                     result = Math.tan(Math.toRadians(angle));
-                    System.out.println("TANGENT VALUE IS:\t" + result);
+                    if (angle >= 361 || angle == 0) {
+                        System.out.println("NON EXISTENT ANGLE");
+                    } else {
+                        System.out.println("TANGENT VALUE IS:\t" + result);
+                    }
                     break;
 
             }
